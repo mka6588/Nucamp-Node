@@ -1,4 +1,4 @@
-const rect = require('./rectangle');
+import rect from './rectangle.mjs';
 
 function solveRect(l, w) {
     console.log(`Solving for the rectangle with dimensions: ${l}, ${w} `);
