@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const campsiteRouter = require('./routes/campsiteRouter');
+const promotionRouter = require('./routes/promotionRouter');
+const partnerRouter = require('./routes/partnerRouter');
 const hostname = 'localhost';
 const port = 3000;
 
@@ -10,6 +12,8 @@ app.use(express.json()); // when the server receives requests with json formatte
 //parsing that json data into js properties of the request object to be used in js
 
 app.use('/campsites', campsiteRouter);
+app.use('/promotions', promotionRouter);
+app.use('/partners', partnerRouter);
 
 
 
